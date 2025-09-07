@@ -1,6 +1,6 @@
 
 """
-002-000-primer_script.py
+002-002-primer_script.py
 --------------------------------
 Primer script de práctica en Python:
 Solicita un nombre desde la línea de comandos y saluda al usuario.
