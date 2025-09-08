@@ -1,6 +1,6 @@
 
 """
-017-030-intro_poo.py
+017-031-intro_poo.py
 --------------------
 Clase Punto2D con:
 - mover(dx, dy)
