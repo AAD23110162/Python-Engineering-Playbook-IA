@@ -1,14 +1,11 @@
 
 """
-010-010-funciones_intro.py
+010-018-funciones_intro.py
 --------------------------
 Calculadora con dos modos:
 1) CLI con flags: --op {suma,resta,mul,div} --a <num> --b <num>
 2) Interactivo (si no pasas flags): te pide op, a y b por teclado.
 
-Ejemplos:
-  python 010-010-funciones_intro.py --op suma --a 12 --b 8
-  python 010-010-funciones_intro.py
 """
 
 from __future__ import annotations
