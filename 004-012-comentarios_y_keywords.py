@@ -1,6 +1,6 @@
 
 """
-004-010-comentarios_y_keywords.py
+004-012-comentarios_y_keywords.py
 --------------------------------
 Ejemplo de uso de comentarios y palabras reservadas (keywords).
 Se muestran 5 keywords con ejemplos sencillos.
