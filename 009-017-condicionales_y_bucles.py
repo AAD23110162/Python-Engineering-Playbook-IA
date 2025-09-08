@@ -1,6 +1,6 @@
 
 """
-009-010-condicionales_y_bucles.py
+009-017-condicionales_y_bucles.py
 ----------------------------------
 Juego "Adivina el número":
 - El programa elige un número entre 1 y 100.
