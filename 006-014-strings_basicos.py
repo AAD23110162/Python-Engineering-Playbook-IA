@@ -1,6 +1,6 @@
 
 """
-006-010-strings_basicos.py
+006-014-strings_basicos.py
 --------------------------------
 Análisis de cadenas:
 - Número de caracteres
