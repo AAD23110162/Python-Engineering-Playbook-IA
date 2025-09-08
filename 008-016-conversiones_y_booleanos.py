@@ -1,6 +1,6 @@
 
 """
-008-010-conversiones_y_booleanos.py
+008-016-conversiones_y_booleanos.py
 -----------------------------------
 Convierte cadenas a int/float/bool de forma segura y demuestra
 operadores lógicos (and/or/not) y "truthiness" en Python.
