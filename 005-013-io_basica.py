@@ -1,6 +1,6 @@
 
 """
-005-010-io_basica.py
+005-013-io_basica.py
 --------------------------------
 Entrada/salida básica con validación.
 Pide nombre y edad al usuario e imprime un saludo.
