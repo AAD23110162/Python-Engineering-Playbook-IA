@@ -1,6 +1,6 @@
 
 """
-019-030-init_y_self.py
+019-033-init_y_self.py
 ----------------------
 Clase Producto con atributos obligatorios definidos en __init__:
 - nombre, precio_base, iva (porcentaje p.ej. 16), descuento (porcentaje p.ej. 10)
