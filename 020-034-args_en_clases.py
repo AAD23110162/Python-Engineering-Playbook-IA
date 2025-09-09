@@ -1,6 +1,6 @@
 
 """
-020-030-args_en_clases.py
+020-034-args_en_clases.py
 -------------------------
 Clase Paquete que acepta items por *args en el constructor.
 Cada item es una tupla (nombre, peso_kg, volumen_l).
