@@ -1,6 +1,6 @@
 
 """
-023-030-encapsulamiento.py
+023-037-encapsulamiento.py
 --------------------------
 Clase Usuario con atributos "privados":
 - _password_hash (solo lectura pública)
