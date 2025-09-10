@@ -1,17 +1,17 @@
 
 """
-022-030-herencia_multifile.py
+022-036-herencia_multifile.py
 -----------------------------
 En un proyecto real, estas clases estarían en archivos separados:
-  vehiculo.py, auto.py, moto.py, camion.py, main.py
-Aquí se muestran juntas para cumplir la restricción de 1 archivo.
+vehiculo.py, auto.py, moto.py, camion.py, main.py
+Para efectos practicos, aquí se muestran juntas.
 
 Jerarquía:
 - Vehiculo (base)
 - Auto, Moto, Camion (heredan y usan super())
 
 Modos:
-  DEMO: crea distintas subclases y muestra info.
+  DEMO: crea distintas subclases y muestra informacion.
   INTERACTIVO: permite elegir tipo y capturar datos.
 
 Autor: Alejandro Aguirre Díaz
