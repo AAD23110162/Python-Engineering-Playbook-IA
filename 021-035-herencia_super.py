@@ -1,6 +1,6 @@
 
 """
-021-030-herencia_super.py
+021-035-herencia_super.py
 -------------------------
 Demuestra herencia con super():
 - Animal (base)
