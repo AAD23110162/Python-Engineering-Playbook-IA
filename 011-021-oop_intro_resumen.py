@@ -130,16 +130,12 @@ def run_interactivo() -> None:
         p.pagar()
     print("Estado final:", p.resumen())
 
-# Solicita al usuario el modo de ejecución y llama al flujo correspondiente.
-modo = input("Selecciona modo [demo/interactivo]: ").strip().lower()
-# Basta con poner 'i' para modo interactivo o 'd' para demo (no es necesario escribir la palabra completa).
-# Esto funciona porque usamos 'modo.startswith("i")', así que cualquier texto que empiece con 'i' activa el modo interactivo.
-# Ejemplo: 'i', 'inter', 'interactivo', etc. activan el modo interactivo.
-# Si no empieza con 'i', se ejecuta el modo demo.
-if modo.startswith("i"):
-    run_interactivo()
-else:
-    run_demo()
+def main() -> None:
+    # Solicita al usuario el modo de ejecución y llama al flujo correspondiente.
+    # Basta con poner 'i' para modo interactivo o 'd' para demo (no es necesario escribir la palabra completa).
+    # Esto funciona porque usamos 'modo.startswith("i")', así que cualquier texto que empiece con 'i' activa el modo interactivo.
+    # Ejemplo: 'i', 'inter', 'interactivo', etc. activan el modo interactivo.
+    # Si no empieza con 'i', se ejecuta el modo demo.
     modo = input("Selecciona modo [demo/interactivo]: ").strip().lower()
     if modo.startswith("i"):
         run_interactivo()
