@@ -9,17 +9,19 @@ Autor: Alejandro Aguirre Díaz
 """
 
 def main() -> None:
-    # Variables de diferentes tipos
-    entero: int = 42
-    decimal: float = 3.1416
-    texto: str = "Python"
-    booleano: bool = True
-    lista: list[int] = [1, 2, 3]
-    tupla: tuple[str, int] = ("edad", 25)
-    diccionario: dict[str, str] = {"nombre": "Alejandro", "curso": "Python"}
+    # Declaración de variables de diferentes tipos primitivos y compuestos
+    entero: int = 42  # Variable entera
+    decimal: float = 3.1416  # Variable de punto flotante
+    texto: str = "Python"  # Variable de texto (string)
+    booleano: bool = True  # Variable booleana
+    lista: list[int] = [1, 2, 3]  # Lista de enteros
+    tupla: tuple[str, int] = ("edad", 25)  # Tupla con un string y un entero
+    diccionario: dict[str, str] = {"nombre": "Alejandro", "curso": "Python"}  
+    # Diccionario con claves y valores string
 
-    # Mostrar valores y tipos
+    # Agrupa todas las variables en una lista para mostrarlas
     variables = [entero, decimal, texto, booleano, lista, tupla, diccionario]
+    # Itera sobre cada variable y muestra su valor y tipo usando la función type()
     for var in variables:
         print(f"Valor: {var} -> Tipo: {type(var)}")
 
