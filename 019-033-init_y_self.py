@@ -24,16 +24,22 @@ class Producto:
     descuento: float # porcentaje (ej. 10 para 10%)
 
     def __post_init__(self) -> None:
-        if self.precio_base < 0: raise ValueError("precio_base no puede ser negativo.")
-        if self.iva < 0: raise ValueError("iva no puede ser negativo.")
-        if not (0 <= self.descuento <= 100): raise ValueError("descuento debe estar entre 0 y 100.")
+        # Validaciones de los atributos al crear el producto
+        if self.precio_base < 0:
+            raise ValueError("precio_base no puede ser negativo.")
+        if self.iva < 0:
+            raise ValueError("iva no puede ser negativo.")
+        if not (0 <= self.descuento <= 100):
+            raise ValueError("descuento debe estar entre 0 y 100.")
 
     def precio_final(self) -> float:
-        total = self.precio_base * (1 + self.iva / 100.0)
-        total *= (1 - self.descuento / 100.0)
+        # Calcula el precio final aplicando IVA y luego descuento
+        total = self.precio_base * (1 + self.iva / 100.0)  # Aplica IVA
+        total *= (1 - self.descuento / 100.0)              # Aplica descuento
         return round(total, 2)
 
 def leer_float(msg: str, minimo: float | None = None) -> float:
+    # Solicita un número flotante al usuario y valida el mínimo si se indica
     while True:
         s = input(msg).strip()
         try:
@@ -46,24 +52,30 @@ def leer_float(msg: str, minimo: float | None = None) -> float:
             print("⚠️ Ingresa un número válido (float).")
 
 def demo() -> None:
+    # Modo demostración: crea productos y muestra su precio final
     p1 = Producto("Baguette", 80.0, iva=16.0, descuento=0.0)
     p2 = Producto("Café Latte", 50.0, iva=16.0, descuento=10.0)
     print(f"{p1.nombre}: base={p1.precio_base} → final={p1.precio_final()}")
     print(f"{p2.nombre}: base={p2.precio_base} → final={p2.precio_final()}")
 
 def interactivo() -> None:
+    # Modo interactivo: solicita datos al usuario y calcula el precio final
     nombre = input("Nombre del producto: ").strip() or "Producto"
     base = leer_float("Precio base: ", minimo=0.0)
     iva = leer_float("IVA (%) ej. 16: ", minimo=0.0)
     desc = leer_float("Descuento (%) 0–100: ", minimo=0.0)
     try:
+        # Crea el producto y muestra el precio final
         p = Producto(nombre, base, iva, desc)
         print(f"Precio final de {p.nombre}: {p.precio_final()}")
     except ValueError as e:
+        # Muestra el error si ocurre una excepción en la validación
         print("Error:", e)
 
 def main() -> None:
+    # Solicita al usuario el modo de ejecución y llama al flujo correspondiente
     modo = input("Selecciona modo [demo/interactivo]: ").strip().lower()
+    # Si el modo empieza con 'i', activa el modo interactivo; si no, ejecuta demo
     interactivo() if modo.startswith("i") else demo()
 
 if __name__ == "__main__":
